@@ -1,0 +1,54 @@
+.add-todo-form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.add-todo-form_label {
+    text-align: left;
+}
+
+.add-todo-form_input {
+    border: none;
+    border-bottom: 2px solid rgb(200, 200, 200);
+    padding: 10px 10px;
+    outline: none;
+    font-size: 24px;
+    flex: 1;
+}
+
+.add-todo-form_input:focus {
+    border-color: rgb(0, 140, 255);
+}
+
+.add-todo-form_date-input {
+    border: none;
+    border-bottom: 2px solid rgb(200, 200, 200);
+    padding: 10px 10px;
+    outline: none;
+    font-size: 24px;
+}
+
+.add-todo-form_todo-finish-date {
+    display: none;
+}
+
+.add-todo-form_todo-submit {
+    padding: 10px;
+    width: fit-content;
+    cursor: pointer;
+    background-color: rgb(0, 140, 255);
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.add-todo-form_todo-submit:hover {
+    background-color: rgb(0, 119, 216);
+}
+
+@media only screen and (max-width: 600px) {
+    .add-todo-form_date-input, .add-todo-form_todo-submit {
+        width: 100%;
+    }
+}

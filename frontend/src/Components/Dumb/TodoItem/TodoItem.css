@@ -1,0 +1,46 @@
+.todo {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid rgb(200, 200, 200);
+    margin-bottom: 10px;
+}
+
+.todo:hover .todo-delete {
+    display: block;
+}
+
+.todo_name {
+    margin: 0;
+    text-align: left;
+    word-wrap: break-word;
+    margin-bottom: 20px;
+}
+
+.todo_finish-date {
+    margin: 0;
+    text-align: left;
+}
+
+.todo-delete {
+    position: absolute;
+    padding: 5px;
+    top: 0;
+    right: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+    color: red;
+}
+
+.todo-delete:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .todo-delete {
+        display: block;
+    }
+}

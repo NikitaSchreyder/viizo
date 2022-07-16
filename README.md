@@ -1,0 +1,2 @@
+- Для запуска backend-приложения  `npm i && npm run start` из директории `./backend`
+- Для запуска frontend-приложения `npm i && npm run start` из директории `./frontend`
